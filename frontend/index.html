@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Read the Road</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">⌁</span>
+            READ THE ROAD
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#technology">Technology</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ROAD INFRASTRUCTURE • AI
+            </div>
+
+            <h1>
+                Understand the road
+                <span>from a single image.</span>
+            </h1>
+
+            <p>
+                An AI-powered road measurement system that analyzes
+                road boundaries, depth and perspective to estimate
+                real-world road width with an intelligent confidence score.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#analyze" class="primary-btn">
+                    Analyze a Road →
+                </a>
+
+                <a href="#technology" class="secondary-btn">
+                    Explore Technology
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+    <div class="road-image-card">
+
+        <img
+            src="assets/road-hero.png"
+            alt="AI road measurement visualization"
+        >
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- ANALYSIS -->
+
+    <section id="analyze" class="analysis-section">
+
+        <div class="section-heading">
+
+            <div class="badge">
+                ROAD ANALYSIS
+            </div>
+
+            <h2>
+                Measure your road
+            </h2>
+
+            <p>
+                Upload an image and let the system analyze the road geometry.
+            </p>
+
+        </div>
+
+
+        <div class="upload-card">
+
+            <div class="upload-icon">
+                ↑
+            </div>
+
+            <h3>
+                Upload road image
+            </h3>
+
+            <p>
+                JPG, JPEG or PNG
+            </p>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/png,image/jpeg"
+                hidden
+            >
+
+            <button
+                class="primary-btn"
+                onclick="document.getElementById('imageInput').click()"
+            >
+                Choose Image
+            </button>
+
+            <div id="fileName"></div>
+
+        </div>
+
+    </section>
+
+        <!-- ROAD INFORMATION -->
+
+    <section id="road-info" class="road-info-section">
+
+        <div class="section-heading">
+
+            <div class="badge">
+                ROAD INTELLIGENCE
+            </div>
+
+            <h2>
+                Explore Indian Highways
+            </h2>
+
+            <p>
+                Search important National Highways and explore
+                their route, length, states and major cities.
+            </p>
+
+        </div>
+
+
+        <div class="road-search-card">
+
+            <div class="road-search-box">
+
+                <input
+                    type="text"
+                    id="highwayInput"
+                    placeholder="Enter highway e.g. NH 44"
+                >
+
+                <button
+                    class="primary-btn"
+                    id="highwaySearchBtn"
+                >
+                    Search Highway →
+                </button>
+
+            </div>
+
+            <div
+                id="highwayResult"
+                class="highway-result"
+            >
+
+                <p>
+                    Search for a highway to see its information.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+
+    <section id="technology" class="technology-section">
+
+        <div class="section-heading">
+
+            <div class="badge">
+                HOW IT WORKS
+            </div>
+
+            <h2>
+                From pixels to measurements
+            </h2>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+            <div class="tech-card">
+
+                <div class="tech-number">
+                    01
+                </div>
+
+                <h3>
+                    Road Segmentation
+                </h3>
+
+                <p>
+                    AI identifies the drivable road surface
+                    from the surrounding environment.
+                </p>
+
+            </div>
+
+
+            <div class="tech-card">
+
+                <div class="tech-number">
+                    02
+                </div>
+
+                <h3>
+                    Boundary Detection
+                </h3>
+
+                <p>
+                    Perspective-aware geometry identifies
+                    the left and right road boundaries.
+                </p>
+
+            </div>
+
+
+            <div class="tech-card">
+
+                <div class="tech-number">
+                    03
+                </div>
+
+                <h3>
+                    Metric Depth
+                </h3>
+
+                <p>
+                    Depth estimation provides information
+                    about the distance of road regions.
+                </p>
+
+            </div>
+
+
+            <div class="tech-card">
+
+                <div class="tech-number">
+                    04
+                </div>
+
+                <h3>
+                    Trustworthy Measurement
+                </h3>
+
+                <p>
+                    Multiple cross-sections and calibration
+                    uncertainty produce a confidence-aware result.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="about">
+
+        <div class="footer-logo">
+            READ THE ROAD
+        </div>
+
+        <p>
+            AI-assisted road infrastructure measurement.
+        </p>
+
+        <p class="footer-small">
+            Hackathon Prototype • 2026
+        </p>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

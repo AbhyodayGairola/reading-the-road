@@ -1,0 +1,25 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# Environment / secrets
+.env
+
+# Generated outputs
+*.jpg
+*.jpeg
+*.png
+
+# ML model files
+*.pt
+*.pth
+*.onnx
